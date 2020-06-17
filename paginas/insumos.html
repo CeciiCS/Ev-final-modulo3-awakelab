@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="../assets/css/main.css" />
+   <link rel="stylesheet" href="reset.css" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="../img/a1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilosInsumos.css">
+    <link rel="stylesheet" href="docto2.css">
+
+
+    <style>@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+  
+    </style>
+    <script src="../js/validar.js"></script>
+    <link rel="stylesheet" href="../css/styleMainv2.css">
+    <script src="../js/mainJsv2.js"></script>
+</head>
+
+<body>
+    <!-- menú de navegación -->
+  <header>
+  
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html">Home</a>
+            <a href="login.html">Ingresa</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos Vitrina</a>
+            <a href="insumos.html">Agregar Insumos</a>
+            <a href="agregar.html">Agregar Contactos</a>            
+            <a href="calendario.html">Calendario</a>
+            <a href="#Contacto">Contáctanos</a>                            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+  </nav>
+  
+
+</header>
+
+<!-- Main -->
+
+<article id="main">
+
+    
+    <section class="wrapper style5">
+        <div class="inner">
+            <form>
+                <h6 style="text-align: left;">Sesión Iniciada</h6>
+                <input type="button" id="btnSalir" value="Cerrar Sesion">
+            </form>
+        </div>
+        <div class="inner">
+            <section>
+                <h4 style="text-align: center;">LISTA DE INSUMOS</h4>
+
+                <form method="post" action="#">
+                    <div class="row uniform">
+
+                       <!---- <div class="datos"> <--8u 12u$(xsmall)---
+                            <input type="text" name="name" id="name" value="" placeholder="Nombre Producto" />
+                        </div>-->
+
+                        <div class="datos2"><!--4u$ 12u$(xsmall)--->
+                            <input type="text" name="numero" id="numero" value="" placeholder="N° " />
+                        </div>
+
+                        <div class="datos3"> <!--2u 12u$(xsmall)--->
+                            <input type="text" name="codigo" id="codigo" value="" placeholder="Codigo"/>
+                        </div>
+
+                        <div class="datos4">  <!---6u 12u$(xsmall)--->
+                            <input type="text" name="descripcion" id="descripcion" value="" placeholder="Producto"/>
+                        </div>
+
+                        <div class="datos3"> <!---2u 12u$(xsmall)--->
+                            <input type="text" name="cantidad" id="cantidad" value="" placeholder="cantidad" onkeyup="format(this)" onchange="format(this)"/>
+                        </div>
+
+                        <div class="datos3"><!---2u$ 12u$(xsmall)----->
+                            <input type="text" name="precio" id="precio" value="" placeholder="Precio" onkeyup="format(this)" onchange="format(this)"/>
+                        </div>								
+                    </div>
+                    <br>
+
+
+                    <div class="boton"> <!---12u$-->
+                        <ul class="actions" style="text-align: center">
+                            <li><input type="button" value="Agregar" class="principal" id="boton1"/></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="tabla-resultado">
+                        <table id="tabla_factura">
+                            <thead>
+                                <!---encabezado de nuestra tabla-->
+                                <tr>
+                                    <th>N</th>
+                                    <th>Codigo</th>
+                                    <th>Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+                                    <th>Subtotal</th>
+                       <!----       <th>Impuesto</th>
+                                    <th>Total</th>-->
+                                    <td>Acción</td>
+                                </tr>
+                            </thead>
+                            <tbody id="contenido_tabla">
+                                <tr>
+                                    <!--cuerpo vacio-->
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                   
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <!--sumas-->
+                                    <td colspan="3"></td>
+                                    <td id="total_catidad">0.00</td>
+                                    <td id="total_precio">0.00</td>
+                                   <td id="total_subtotales">0.00</td>
+                            <!---- <td id="total_impuesto">0.00</td>
+                                    <td id="total_total">0.00</td>-->
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </form>
+            </section>
+            <br> 
+            <br>
+            <br>
+        </div>
+    </section>
+</article>
+
+
+
+
+
+
+<footer id="Contacto">
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>Telefono</h4>
+            <p>+56987654321</p>
+        </div>
+        <div class="content-foo">
+            <h4>Email</h4>
+            <p>contacto@pastelitodiary</p>
+        </div>
+
+        <div class="content-foo">
+            <h4>Ubicación</h4>
+            <p>Chile</p>
+        </div>
+
+    </div>
+    <h2 class="titulo-final"> &copy; MRPR / Equipo coffee java </h2>
+</footer>
+<div class="social-icons">
+    <ul>
+        <li><a class="envelope" href="mailto:contacto@digitalymarketing.cl"><i class="fa fa-envelope"></i></a></li>
+
+        <li><a class="facebook" href="https://www.facebook.com/digitalymarketingchile"><i
+                    class="fa fa-facebook"></i></a></li>
+
+        <li><a class="instagram" href="https://www.instagram.com/digitalymarketingchile"><i
+                    class="fa fa-instagram"></i></a></li>
+
+        <li><a class="whatsapp" href="https://api.whatsapp.com/send?phone=56982066207"><i
+                    class="fa fa-whatsapp"></i></a></li>
+
+        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+</div>
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.scrollex.min.js"></script>
+<script src="../js/jquery.scrolly.min.js"></script>
+<script src="../js/skel.min.js"></script>
+<script src="../js/util.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/docto.js"></script>
+
+
+</body>
+<script src="../js/logout.js"></script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pastelito Diary</title>
+    <link rel="shortcut icon" href="/img/icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styledam.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');</style>
+    </style>
+    <script src="../js/validar.js"></script>
+    <link rel="stylesheet" href="../css/styleMainv2.css">
+    <script src="../js/mainJsv2.js"></script>
+   </head>
+  <body>
+    <header>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="../index.html">Home</a>
+                <a href="login.html">Ingresa</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="productos.html">Productos Vitrina</a>
+                <a href="insumos.html">Agregar Insumos</a>
+                <a href="agregar.html">Agregar Contactos</a>            
+                <a href="calendario.html">Calendario</a>
+                <a href="#Contacto">Contáctanos</a>                            
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+          
+           
+        </nav>
+
+        <section class="textos-header">
+            <div class="inner">
+                <form>
+                    <h4 style="text-align: left;">Sesión Iniciada</h4>
+                    <input type="button" id="btnSalir" value="Cerrar Sesion">
+                </form>
+            </div>
+            <h1>Pastelito Diary</h1>
+            <h2>Agregar Contacto</h2>
+        </section>
+        <div style="height: 150px; overflow: hidden;"><svg viewbox="0, 0, 500, 150" preserveaspectratio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(255, 255, 255);"></path>
+            </svg>
+        </div>
+    </header>
+<!-- partial:index.partial.html -->
+<br>
+<h1>Ingrese los datos solicitados</h1>
+
+    <div class = "panel-body">
+        <form id = "form1" action="">
+            <input type = "text" class = "form1" name = "name" id="name" placeholder = "Nombre"/>
+                <br/>
+            <input type = "text" class = "form1" name = "lname" id="lname" placeholder = "Direccion"/>                    
+                <br>
+            <input type = "email" class = "form1" name = "email" id="email" placeholder = "Correo"/>
+                <br/>
+            <input type = "tel" class = "form1" name = "tel" id="tel" placeholder = "Telefono: +56911111111"/>
+                <br/>
+                <br>
+            <button type = "submit" id="agregar">Añadir</button>
+
+        </form>
+
+        <div>
+            <table id="mytable">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+            </tr>	
+            </table>
+        </div>
+
+    </div>
+
+    
+
+<script src="/js/jquery-3.5.1.min.js"></script>
+<script src="/js/jquery.validate.js"></script>
+<script src="/js/indexagregar.js"></script>
+
+    
+    <footer id="Contacto">
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Telefono</h4>
+                <p>+56987654321</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>contacto@pastelitodiary.cl</p>
+            </div>
+
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p>Chile</p>
+            </div>
+
+        </div>
+        <h2 class="titulo-final"> &copy; Equipo Coffe Java </h2>    </footer>
+        <div class="social-icons">
+            <ul>
+                <li><a class="envelope" href="mailto:contacto@pastelitodiary.cl">
+                    <i class="fa fa-envelope"></i></a></li>
+                <li><a class="facebook" href="https://www.facebook.com/fdsfds">
+                    <i class="fa fa-facebook"></i></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/fsdfds">
+                    <i class="fa fa-instagram"></i></a></li>
+                <li><a class="whatsapp" href="https://api.whatsapp.com/send?phone=56987654321">
+                    <i class="fa fa-whatsapp"></i></a></li>
+                <li><a class="linkedin" href="https://linkedin.com/djfs">
+                    <i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+  </body>
+  <script src="../js/logout.js"></script>
+</html>
